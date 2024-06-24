@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: #ff6347;
+  margin: 15px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1px;
+}
+
+.form-column {
+  flex: 1;
+  margin: 0 25px;
+  font-size: 15px;
+}
+
+.cover-letter-column {
+  font-size: 20px;
+  flex: 1;
+  margin: 0 10px;
+}
+
+textarea {
+  width: 90%;
+  height: 150px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
