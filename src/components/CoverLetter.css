@@ -1,0 +1,33 @@
+.cover-letter-column {
+  font-size: 10px;
+  flex: 1;
+  margin: 0 10px;
+  position: relative;
+}
+
+.textarea-container {
+  position: relative;
+  width: 90%;
+  height: 75%;
+}
+
+#CoverLetter {
+  width: 100%;
+  height: 105%;
+  margin-bottom: 20px;
+  padding: 0px;
+  border: 1px solid #61dafb;
+  border-radius: 5px;
+}
+
+.copy-icon {
+  position: absolute;
+  bottom: -6px;
+  right: 2px;
+  background: black;
+  border: black;
+  cursor: pointer;
+  font-size: 15px;
+  color: #61dafb;
+}
+

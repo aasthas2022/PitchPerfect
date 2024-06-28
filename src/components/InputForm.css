@@ -16,14 +16,6 @@
   margin: 0 5px;
 }
 
-#CoverLetter {
-  width: 90%;
-  height: 75%;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
 
 label {
   display: block;
