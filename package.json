@@ -2,11 +2,12 @@
   "name": "cover-letter-generator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://aasthas2022.github.io/PitchPerfect",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "dotenv": "^16.0.3"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -32,5 +33,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://pitchperfect-backend.netlify.app/.netlify/functions/server/"
+  "proxy": "https://pitchperfect-backend.netlify.app/.netlify/functions/server/",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
 }
