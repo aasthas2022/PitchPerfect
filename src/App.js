@@ -8,10 +8,12 @@ import './styles/App.css';
 function App() {
   const [resume, setResume] = useState('');
   const [jobDescription, setJobDescription] = useState('');
+  const [companyMissionVisionCulture, setcompanyMissionVisionCulture] = useState('');
+  const [additionalInfo, setadditionalInfo] = useState('');
   const [coverLetter, setCoverLetter] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (resume, jobDescription) => {
+  const handleSubmit = async (resume, jobDescription, companyMissionVisionCulture, additionalInfo) => {
     setLoading(true);
     try {
       const response = await fetch('https://pitchperfect-backend.netlify.app/.netlify/functions/server/generateCoverLetter', {
@@ -19,7 +21,7 @@ function App() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ resume, jobDescription }),
+        body: JSON.stringify({ resume, jobDescription, companyMissionVisionCulture, additionalInfo }),
       });
       const data = await response.json();
       setCoverLetter(data.coverLetter);
@@ -39,6 +41,10 @@ function App() {
           setResume={setResume}
           jobDescription={jobDescription}
           setJobDescription={setJobDescription}
+          companyMissionVisionCulture={companyMissionVisionCulture}
+          setcompanyMissionVisionCulture={setcompanyMissionVisionCulture}
+          additionalInfo={additionalInfo}
+          setadditionalInfo={setadditionalInfo}
           onSubmit={handleSubmit}
         />
         <CoverLetter content={coverLetter} />
