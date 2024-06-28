@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import InputForm from './components/InputForm';
 import CoverLetter from './components/CoverLetter';
+import Loader from './components/Loader';
 import Footer from './components/Footer';
 import './styles/App.css';
 
@@ -8,8 +9,10 @@ function App() {
   const [resume, setResume] = useState('');
   const [jobDescription, setJobDescription] = useState('');
   const [coverLetter, setCoverLetter] = useState('');
+  const [loading, setLoading] = useState(false);
 
-  const generateCoverLetter = async (resume, jobDescription) => {
+  const handleSubmit = async (resume, jobDescription) => {
+    setLoading(true);
     try {
       const response = await fetch('https://pitchperfect-backend.netlify.app/.netlify/functions/server/generateCoverLetter', {
         method: 'POST',
@@ -21,7 +24,9 @@ function App() {
       const data = await response.json();
       setCoverLetter(data.coverLetter);
     } catch (error) {
-      console.error('Error:', error);
+      console.error('Error fetching cover letter:', error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -34,10 +39,11 @@ function App() {
           setResume={setResume}
           jobDescription={jobDescription}
           setJobDescription={setJobDescription}
-          onSubmit={generateCoverLetter}
+          onSubmit={handleSubmit}
         />
         <CoverLetter content={coverLetter} />
       </div>
+      {loading && <Loader />}
       <Footer />
     </div>
   );
