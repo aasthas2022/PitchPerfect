@@ -31,9 +31,11 @@ function CoverLetter({ content }) {
       <label>Generated Cover Letter:</label>
       <div className="textarea-container">
         <div id="CoverLetter" dangerouslySetInnerHTML={formatContent(content)} className="formatted-content" />
-        <button onClick={copyToClipboard} className="copy-icon">
-          <FaClipboard />
-        </button>
+        <div className="footer-icon">
+          <button onClick={copyToClipboard} className="copy-icon">
+            <FaClipboard />
+          </button>
+        </div>
       </div>
     </div>
   );
