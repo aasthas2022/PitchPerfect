@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/PitchPerfect/static/css/main.d506e462.css",
-    "main.js": "/PitchPerfect/static/js/main.51dbd4de.js",
+    "main.css": "/PitchPerfect/static/css/main.c12d4faf.css",
+    "main.js": "/PitchPerfect/static/js/main.878f45ab.js",
     "index.html": "/PitchPerfect/index.html",
-    "main.d506e462.css.map": "/PitchPerfect/static/css/main.d506e462.css.map",
-    "main.51dbd4de.js.map": "/PitchPerfect/static/js/main.51dbd4de.js.map"
+    "main.c12d4faf.css.map": "/PitchPerfect/static/css/main.c12d4faf.css.map",
+    "main.878f45ab.js.map": "/PitchPerfect/static/js/main.878f45ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.d506e462.css",
-    "static/js/main.51dbd4de.js"
+    "static/css/main.c12d4faf.css",
+    "static/js/main.878f45ab.js"
   ]
 }
