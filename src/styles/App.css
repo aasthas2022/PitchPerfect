@@ -10,7 +10,7 @@
 
 h1 {
   color: #ff6347;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .container {
@@ -36,7 +36,7 @@ textarea {
   height: 150px;
   margin-bottom: 20px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #61dafb;
   border-radius: 5px;
 }
 
@@ -49,13 +49,10 @@ textarea {
 button {
   padding: 10px 20px;
   font-size: 15px;
-  color: #fff;
+  color: white;
   background-color: #ff6347;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #ff6347;
-}
